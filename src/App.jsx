@@ -6,27 +6,21 @@ import { Sidebar } from './components/Siderbar'
 
 import './global.css'
 
-
 export function App() {
   return (
     <div>
       <Header />
-      
+
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-        <Post
-        author="Jonas Benjamim"
-        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita tempora doloremque inventore quos vel libero ut dolor, explicabo ab, sunt"
-      />
-      <Post
-        author="Gabriel linn"
-        content="Um novo post legal"
-      />
+          <Post
+            author="Jonas Benjamim"
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi expedita tempora doloremque inventore quos vel libero ut dolor, explicabo ab, sunt"
+          />
+          <Post author="Gabriel linn" content="Um novo post legal" />
         </main>
-
       </div>
-      
     </div>
   )
 }
